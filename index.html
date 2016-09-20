@@ -34,6 +34,12 @@
 
 		<!-- Custom Theme JavaScript -->
 		<script src="js/clean-blog.min.js"></script>
+		<script type="text/javascript">
+			var userAgentInfo = navigator.userAgent;
+			if(userAgentInfo.indexOf("Android") > 0 || userAgentInfo.indexOf("iPhone") > 0 || userAgentInfo.indexOf("SymbianOS") > 0 || userAgentInfo.indexOf("Windows Phone") > 0 || userAgentInfo.indexOf("iPod") > 0 || userAgentInfo.indexOf("iPad") > 0) {
+				window.location.href = "mobile/index.html";
+			}
+		</script>
 	</head>
 
 	<!-- Page Header -->
@@ -69,7 +75,7 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="https://ibrucekong.github.io/gips/">Home</a>
+						<a href="https://ibrucekong.github.io/gips">Home</a>
 					</li>
 					<li>
 						<a href="animation.html" target="_blank">Animation</a>
@@ -101,7 +107,7 @@
 							<body>
 								<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 									<div class="post-preview">
-										<a href="posts/2016-09-20-gips-introduction.html">
+										<a href="posts/web/2016-09-20-gips-introduction.html">
 											<h2 class="post-title">
 	                            GIPS Introduction
 	                        </h2>
@@ -124,6 +130,7 @@
 						</section>
 
 					</div>
+
 			</div>
 			<hr>
 
@@ -134,7 +141,7 @@
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 							<p class="copyright text-muted">Copyright &copy;
-								<a class="copyright text-muted" style="text-decoration: none;" href="https://ibrucekong.github.io/gips/">ibrucekong.github.io/gips</a> 2016 All Rights Reserved
+								<a class="copyright text-muted" style="text-decoration: none;" href="https://ibrucekong.github.io/gips">ibrucekong.github.io/gips</a> 2016 All Rights Reserved
 								<script type="text/javascript">
 									var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 									document.write(unescape("%3Cspan id='cnzz_stat_icon_1260420173'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260420173%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
