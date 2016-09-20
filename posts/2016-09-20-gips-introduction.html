@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+		<title>GIPS Introduction | GIPS</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="../css/clean-blog.min.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="../css/comment.css" />
+
+		<link rel="stylesheet" type="text/css" href="../markdownToc_files/github2-rightpart.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../markdownToc_files/github1-contents.css">
+		<link rel="stylesheet" type="text/css" href="../markdownToc_files/github1-contents.css">
+		<link rel="stylesheet" href="../markdownToc_files/zTreeStyle.css" type="text/css">
+		<style>
+			.ztree li a.curSelectedNode {
+				padding-top: 0px;
+				background-color: #FFE6B0;
+				color: black;
+				height: 16px;
+				border: 1px #FFB951 solid;
+				opacity: 0.8;
+			}
+			
+			.ztree {
+				overflow: auto;
+				height: 100%;
+				min-height: 200px;
+				top: 0px;
+			}
+		</style>
+	</head>
+
+	<body style="">
+		<div>
+			<div style="width:30%;">
+				<ul id="tree" class="ztree" style="width: 260px; overflow: auto; position: fixed; z-index: 2147483647; border: 0px none; left: 0px; bottom: 0px;">
+					<!-- 目录内容在网页另存为之后将插入到此处 -->
+				</ul>
+			</div>
+			<div id="readme" style="width:70%;margin-left:25%;">
+				<article class="markdown-body">
+					<!-- Page Header -->
+					<!-- Set your background image for this header on the line below. -->
+					<header class="intro-header" style="background-image: url('../img/post-bg.jpg')">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+									<div class="post-heading">
+										<h1 style="color: white;">GIPS Introduction</h1>
+										<p class="subheading"><br>Design and Implementation of Intelligence Patroling System based on GIS——Case Studies of Shandong University of Science and Technology</p>
+										<span class="meta">Posted by <a href="../index.html">ibrucekung</a> on September 20, 2016</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+
+					<!-- Post Content -->
+					<article>
+						<div class="container">
+							<section class="inner">
+								<!--////////////////////////////////  Markdown生成的Html文件的body内容放在下面  ////////////////////////////////////////////-->
+
+								<body>
+									<p>
+										<a href="../img/GIPS.png" target="_blank"><img src="../img/GIPS.png" alt="" style="max-width:100%;"></a>
+									</p>
+
+									<h1>GIPS</h1>
+
+									<p>基于GIS的智能巡检系统的设计与实现——以山东科技大学为例<br>Design and Implementation of Intelligence Patroling System based on GIS——Case Studies of Shandong University of Science and Technology</p>
+
+									<ol>
+										<li>
+											<a href="#System">System</a>
+										</li>
+										<li>
+											<a href="#Language">Language</a>
+										</li>
+										<li>
+											<a href="#Components">Components</a>
+										</li>
+										<li>
+											<a href="#Tools">Tools</a>
+										</li>
+										<li>
+											<a href="#Funcations">Funcations</a>
+
+											<ol>
+												<li>
+													<a href="#Welcome1">Welcome</a>
+
+													<ol>
+														<li>
+															<a href="#Welcome2">Welcome</a>
+														</li>
+													</ol>
+												</li>
+												<li>
+													<a href="#Login1">Login</a>
+
+													<ol>
+														<li>
+															<a href="#Login2">Login</a>
+														</li>
+														<li>
+															<a href="#Register">Register</a>
+														</li>
+														<li>
+															<a href="#Forget_Password">Forget Password</a>
+														</li>
+													</ol>
+												</li>
+												<li>
+													<a href="#Home">Home</a>
+
+													<ol>
+														<li>
+															<a href="#Map">Map</a>
+														</li>
+														<li>
+															<a href="#Attendance">Attendance</a>
+														</li>
+														<li>
+															<a href="#Brief">Brief</a>
+														</li>
+														<li>
+															<a href="#Me">Me</a>
+														</li>
+													</ol>
+												</li>
+												<li>
+													<a href="#Setting">Setting</a>
+
+													<ol>
+														<li>
+															<a href="#Self">Self</a><br>
+														</li>
+														<li>
+															<a href="#Font">Font</a>
+														</li>
+														<li>
+															<a href="#Receive_Message">Receive Message</a>
+														</li>
+														<li>
+															<a href="#Change_Skin">Change Skin</a>
+														</li>
+														<li>
+															<a href="#About">About</a>
+														</li>
+													</ol>
+												</li>
+											</ol>
+										</li>
+										<li>
+											<a href="#Gradle">Gradle</a>
+										</li>
+										<li>
+											<a href="#OkHttpUtils">OkHttpUtils</a>
+										</li>
+										<li>
+											<a href="#ThemeSkinning">ThemeSkinning</a>
+										</li>
+										<li>
+											<a href="#FMMap">FMMap</a>
+										</li>
+										<li>
+											<a href="#Developers">Developers</a>
+										</li>
+										<li>
+											<a href="#Change_Log">Change Log</a>
+										</li>
+										<li>
+											<a href="#License">License</a>
+										</li>
+									</ol>
+
+									<p></p>
+
+									<h2>System</h2>
+
+									<blockquote>
+										<ul>
+											<li>Windows 7 +</li>
+											<li>Ubuntu 16.04</li>
+											<li>Android 5.1 +</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<h2>Language</h2>
+
+									<blockquote>
+										<ul>
+											<li>Client：Java -&gt; Android</li>
+											<li>Server：C# -&gt; WCF</li>
+											<li>Data：SQL Server</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<h2>Components</h2>
+
+									<blockquote>
+										<ul>
+											<li>Android</li>
+											<li>WCF</li>
+											<li>SQL Server</li>
+											<li>PowerDesigner</li>
+											<li>Xmind</li>
+											<li>Markdown</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<h2>Tools</h2>
+
+									<blockquote>
+										<ul>
+											<li>Android Studio 2.2</li>
+											<li>Visual Studio 2016</li>
+											<li>SQL Server 2008 R2</li>
+											<li>PowerDesigner 15.1</li>
+											<li>Postman 4.6.2</li>
+											<li>Xmind 7.5</li>
+											<li>MarkdownPad 2</li>
+											<li>Photoshop CC 2015.5.1</li>
+											<li>Genymotion</li>
+											<li>NOX</li>
+											<li>Droid4x</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<h2>Funcations</h2>
+
+									<p></p>
+
+									<blockquote>
+										<h3>Welcome</h3>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Welcome</h4>
+
+												<pre><code>1.数据存储：SharedPreference
+ ⅰ.记录了登录状态
+  LOGIN_STATUS
+    value:0，1，2，3
+  其中，各个数字代表的含义：
+  0 -&gt; 未曾登录过，经过初始化界面，直接进Welcome界面；
+  1 -&gt; 打开过Welcome界面，未登录，则经过初始化界面，直接进登录界面；
+  2 -&gt; 登录过，但是已经注销，只保留了帐号，消除了密码，经过初始化界面，直接进登录界面；
+  3 -&gt; 一直是登录状态，则经过初始化界面，跳过Welcome和登录界面，直接进到主界面。
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<h3>Login</h3>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Login</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Register</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Forget Password</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<h3>Home</h3>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Map</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Attendance</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Brief</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<p>我的界面</p>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<h3>Setting</h3>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Self</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Font</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Receive Message</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>Change Skin</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<blockquote>
+										<ul>
+											<li>
+												<h4>About</h4>
+
+												<pre><code>1. 记录...
+ ⅰ.记录了...
+</code></pre>
+											</li>
+										</ul>
+
+										<p>注释：将上面的各个功能补全，列出所使用的接口、类、方法；利用动态图和静态图把功能展示出来。</p>
+									</blockquote>
+
+									<p></p>
+
+									<h2>Gradle</h2>
+
+									<blockquote>
+										<pre><code>apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+   compileSdkVersion 24
+   buildToolsVersion "24.0.2"
+   defaultConfig {
+       applicationId "org.sdust.gips"
+       minSdkVersion 21
+       targetSdkVersion 22
+       versionCode 1
+       versionName "1.0"
+       testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+   }
+   buildTypes {
+       release {
+           minifyEnabled false
+           proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+       }
+   }
+    compileOptions {
+       sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+   compile fileTree(include: ['*.jar'], dir: 'libs')
+   androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+       exclude group: 'com.android.support', module: 'support-annotations'
+   })
+   testCompile 'junit:junit:4.12'
+   compile 'com.android.support:appcompat-v7:24.2.0'
+   compile 'com.android.support:design:24.2.0'
+   compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+   compile 'com.jakewharton:butterknife:8.2.1'
+   apt 'com.jakewharton:butterknife-compiler:8.2.1'
+   compile 'com.google.code.gson:gson:2.5'
+   compile 'com.zhy:okhttputils:2.6.2'
+   compile 'me.tatarka:gradle-retrolambda:3.3.0-beta4'
+   compile 'com.makeramen:roundedimageview:2.2.1'
+   compile project(':library')
+   compile files('libs/fengmap-beta-1.2.0.jar')
+
+   compile 'me.majiajie:pager-bottom-tab-strip:1.0.0'
+}
+</code></pre>
+									</blockquote>
+
+									<p></p>
+
+									<h2>OkHttpUtils</h2>
+
+									<blockquote>
+										<ul>
+											<li>
+												<a href="https://github.com/hongyangAndroid/okhttputils">OkHttpUtils</a>是
+												<a href="https://github.com/square/okhttp">OkHttp</a>的辅助类</li>
+											<li>使用方法：使用GitHub上
+												<a href="https://github.com/hongyangAndroid">hongyangAndroid</a>大神的okhttputils的
+												<a href="https://github.com/hongyangAndroid/okhttputils/blob/master/README.md">教程</a>。</li>
+											<li>主要使用了GET和POST方法：</li>
+										</ul>
+
+										<h3>GET</h3>
+
+										<pre><code> //以登录响应为例进行说明
+@Override
+    public void LoadLoginList(OnLoadModelListListener loadModelListListener) {
+        OkHttpUtils
+                .get()
+                // Config.METHOD_URL:http://192.168.72.63:6686/Service1.svc/LoginCheck/tel/password
+                // tel和password都是传出的参数，切记password后面没有斜杠
+                .url(Config.METHOD_URL)
+                .build()
+                // 执行请求后，有个回调函数，返回字符串类型
+                .execute(new StringCallback() {
+            @Override
+            public void onError(Call call, Exception e, int id) {
+                // 响应失败的处理
+                loadModelListListener.onFailuer(e);
+            }
+            @Override
+            public void onResponse(String response, int id) {
+                // 响应成功的处理
+                List&lt;LoginBean&gt; loginBeen = JsonUtils.readJsonLoginBean(response);
+                loadModelListListener.onSuccess(loginBeen);
+            }
+        });
+    }
+</code></pre>
+
+										<h3>POST</h3>
+
+										<pre><code> //以注册响应为例进行说明
+@Override
+    public void LoadRegList(String content, RegModel.OnLoadModelListListener loadModelListListener) {
+        OkHttpUtils
+                .postString()
+                // Config.METHOD_URL:http://192.168.72.63:6686/Service1.svc/RegUser
+                // 切记RegUser后面没有斜杠
+                .url(Config.METHOD_URL)
+                // 设置传出协议内容、格式
+                .mediaType(MediaType.parse("application/json; charset=utf-8"))
+                // 设置传出协议头内容、格式
+                .addHeader("Content-type","application/json")
+                .addHeader("Accept","application/json")
+                .content(content)
+                .build()
+                // 执行请求后，有个回调函数，返回字符串类型
+                .execute(new StringCallback() {
+            @Override
+            public void onError(Call call, Exception e, int id) {
+                // 响应失败的处理
+                loadModelListListener.onFailuer(e);
+            }
+            @Override
+            public void onResponse(String response, int id) {
+                // 响应成功的处理
+                List&lt;RegBean&gt; regBeen = JsonUtils.readJsonRegBean(response);
+                loadModelListListener.onSuccess(regBeen);
+            }
+        });
+    }
+</code></pre>
+									</blockquote>
+
+									<p></p>
+
+									<h2>ThemeSkinning</h2>
+
+									<blockquote>
+										<ul>
+											<li>ThemeSkinning（
+												<a href="https://github.com/burgessjp/ThemeSkinning">Github</a>）的发现，是在
+												<a href="http://www.jianshu.com/">简书</a>上看到的一篇文章
+												<a href="http://www.jianshu.com/p/af7c0585dd5b">《Android主题换肤 无缝切换》</a>,参考着在系统中加入这个功能；<br> ThemeSkinning
+												<a href="https://github.com/fengjundev/Android-Skin-Loader">SkinLoader</a>的辅助类；<br> ThemeSkinning具体方法参考作者给出的
+												<a href="https://github.com/burgessjp/ThemeSkinning/blob/master/README.md">教程</a>设置即可。</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<h2>FMMap</h2>
+
+									<blockquote>
+										<ul>
+											<li>使用
+												<a href="http://www.fengmap.com/">FMMap</a>作为底图数据<br> FMMap是北京蜂鸟视图科技有信公司制作的产品，专注于提供室内三维、二维地图、全景地图、商户POI兴趣点四类产品服务，使用户可以通过PC、只能手机等互联网终端对室内场景进行浏览。
+											</li>
+											<li>SDK包括
+												<a href="http://developers.fengmap.com/android_overview.html">Android SDK</a>，
+												<a href="http://developers.fengmap.com/ios_overview.html">iOS SDK</a>，
+												<a href="http://developers.fengmap.com/js_overview.html">JavaScript SDK</a><br> 这里仅使用Android部分。蜂鸟地图 Android SDK（点
+												<a href="http://developers.fengmap.com/android_download.html">这里</a>下载Android SDK）是一套基于Android 2.3及以上版本设备的应用程序接口。您可以使用该SDK开发适用于Android系统移动设备的室内地图应用，通过调用地图SDK接口，您可以轻松访问蜂鸟的地图服务和
+												<a href="http://developers.fengmap.com/android_downloadData.html">数据</a>，构建功能丰富、交互性强的室内地图类应用程序（这里有
+												<a href="http://developers.fengmap.com/android_examples.html">代码示例</a>）。</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<h2>Developers</h2>
+
+									<blockquote>
+										<ul>
+											<li>Bruce -
+												<a href="http://git.oschina.net/ibrucekong">开源中国</a> -
+												<a href="https://github.com/ibrucekong">Github</a>
+											</li>
+											<li>Wolfning -
+												<a href="http://git.oschina.net/wolfning">开源中国</a>
+											</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<h2>Change Log</h2>
+
+									<h4>09/13/16</h4>
+
+									<blockquote>
+										<ul>
+											<li>init commit</li>
+										</ul>
+									</blockquote>
+
+									<p></p>
+
+									<h2>License</h2>
+
+									<pre><code>Copyright 2016 Bruce Kong
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+</code></pre>
+								</body>
+
+								<!--////////////////////////////////  Markdown生成的Html文件的body内容放在上面  ////////////////////////////////////////////-->
+								<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
+
+								<hr>
+								<p>系统持续更新中...</p>
+								<p>P.S. 如果您对此系统有好的想法的话，请联系
+									新浪微博<a href="http://weibo.com/kongbin1246053598de" target="_blank">[ibrucekong]</a>、
+									简书<a href="http://www.jianshu.com/users/4bd3b777695a" target="_blank">[ibrucekong]</a></p>
+
+								<br />
+
+								<!--  share group -->
+								<div id="shared">
+									<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a>
+									<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=233be111-f626-4ac6-b27e-1c6e1570de84&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#19D&amp;text=分享到"></script>
+								</div>
+								<!--判断是不是移动端-->
+								<script type="text/javascript">
+									var browser = {
+										version: function() {
+											var u = navigator.userAgent,
+												app = navigator.appVersion;
+											return {
+												trident: u.indexOf('Tredent') > -1, //IE内核
+												presto: u.indexOf('Presto') > -1, //opera内核
+												webkit: u.indexOf('AppleWebKit') > -1, //苹果 谷歌内核
+												gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+												mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+												ios: !!u.match(/\(i[^;]+;(U;)? CPU.+Mac OS X/), //ios终端
+												android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //Android终端或UC浏览器
+												iPhone: u.indexOf('iPhone') > -1, //是否是iPhone
+												iPad: u.indexOf('iPad') > -1, //是否是ipad
+												webApp: u.indexOf('Safari') > -1, //是否是web应用，没有头部和底部
+											};
+										}(),
+										language: (navigator.browserLanguage || navigator.language).toLowerCase()
+									}
+									if(browser.version.mobile == true) {
+										var t = document.getElementById('shared');
+										t.style.display = "none";
+									} else {
+										var t = document.getElementById('shared');
+										t.style.display = "block";
+									}
+								</script>
+								<br />
+								<div class="comments">
+									<!-- UY BEGIN -->
+									<div id="uyan_frame"></div>
+									<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2114210"></script>
+									<!-- UY END -->
+
+								</div>
+					</article>
+
+					<hr>
+
+					<!-- Footer -->
+					<footer>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+									<ul class="list-inline text-center">
+										<li>
+											<a href="https://twitter.com/ibrucekong">
+												<span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+											</a>
+										</li>
+										<li>
+											<a href="https://github.com/ibrucekong">
+												<span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+											</a>
+										</li>
+										<li>
+											<a href="http://git.oschina.net/bruce0325">
+												<span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse"><b>码</b></i>
+                                </span>
+											</a>
+										</li>
+									</ul>
+									<p class="copyright text-muted">Copyright &copy;
+										<a class="copyright text-muted" style="text-decoration: none;" href="https://ibrucekong.github.io/GIPS/">ibrucekong.github.io/gips</a> 2016 All Rights Reserved
+										<script type="text/javascript">
+											var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+											document.write(unescape("%3Cspan id='cnzz_stat_icon_1260420173'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260420173%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+										</script>
+									</p>
+								</div>
+							</div>
+						</div>
+					</footer>
+
+					<!-- jQuery -->
+					<script src="../js/jquery.js"></script>
+
+					<!-- Bootstrap Core JavaScript -->
+					<script src="../js/bootstrap.min.js"></script>
+
+					<!-- Custom Theme JavaScript -->
+					<script src="../js/clean-blog.min.js"></script>
+
+				</article>
+				</div>
+			</div>
+			<script src="../markdownToc_files/jquery-1.10.2.min.js"></script>
+			<script src="../markdownToc_files/jquery.ztree.all-3.5.min.js"></script>
+			<script src="../markdownToc_files/jquery.ztree_toc.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#tree').ztree_toc({
+						is_auto_number: false,
+						documment_selector: '.markdown-body',
+						is_expand_all: true
+					});
+				});
+			</script>
+	</body>
+
+</html>
